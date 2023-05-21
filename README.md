@@ -27,11 +27,25 @@ BASH script named “create_cname.sh”)
 
 - [Prerequisites](#Prerequisites)
 
-TF
-CERTBOT :
+1. TF, and certificate from XC portal :
+please follow the "Generate API Tokens" and "Generate API Certificate"
+
+https://docs.cloud.f5.com/docs/how-to/user-mgmt/credentials
+
+extract the key + certificate :
+    openssl pkcs12 -info -in certificate.p12 -out private_key.key -nodes -nocerts
+    openssl pkcs12 -info -in certificate.p12 -out certificate.cert -nokeys
+    
+use them in the variable.tf file
+
+2.CERTBOT :
+
 https://certbot.eff.org/
+
 VESCTL:
+
 https://gitlab.com/volterra.io/vesctl/blob/main/README.md
+
 jq installed
 
 
