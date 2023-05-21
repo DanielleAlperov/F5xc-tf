@@ -12,9 +12,13 @@ LB).
 the components :
 
 Variables.tf = please change to adjust your env.
+
 HTTP_POOL.tf = create Pool with the reference of your service
+
 GENERATE_CERTIFICATE.tf = generates certificate using CERTBOT (runs BASH script names “script.sh” + “dns_register.sh”)
+
 HTTPS_APP.tf = create LB with the certificate generated before, pointing to the Pool created before.
+
 DNS_Create_Record.tf = create cname pointing from your desired FQDN to the cname created by the system. [we should replace with you public IP]. (runs 
 BASH script named “create_cname.sh”)
 
