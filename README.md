@@ -7,7 +7,7 @@ using TF:
 4. Publish the DNS pointing to the LB automatically (in my example, AWS 
 LB).
 
-[![Logo of My Project](./architecture-design.jpg)
+![Logo of My Project](./architecture-design.jpg)
 
 the components :
 
