@@ -40,7 +40,7 @@ get_cname() {
 }
 cname_value=$(get_cname)
 echo "Host Name: $cname_value"
-NEW_RECORD="{\"ttl\":3600,\"cname_record\":{\"name\":\"$1$2\",\"value\":\"$cname_value\"}}"
+NEW_RECORD="{\"ttl\":3600,\"cname_record\":{\"name\":\"$1\",\"value\":\"$cname_value\"}}"
 
 
   while ((retry_count < max_retries)); do    
