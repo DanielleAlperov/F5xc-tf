@@ -63,7 +63,7 @@ export VES_P12_PASSWORD=myp12password
 jq installed
 
 
-- [How to demo](#How to demo)
+- [How to demo](#How_to_demo)
 
 run manaually the create_cert.sh script (with strong user)
 
