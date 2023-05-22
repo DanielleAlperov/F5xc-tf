@@ -63,4 +63,26 @@ export VES_P12_PASSWORD=myp12password
 jq installed
 
 
-- [Installation](#installation)
+- [How to demo](#How to demo)
+
+run manaually the create_cert.sh script (with strong user)
+
+choose the Domain Name, Tenant, APIkey, and Email (could be fake)
+
+when certificate is created run the following commads:
+
+./vesctl.darwin-amd64 request secrets get-public-key > tenant-public-key
+
+./vesctl.darwin-amd64 request secrets get-policy-document --namespace shared --name ves-io-allow-volterra > ves-io-allow-volterra-policy
+
+./vesctl.darwin-amd64 request secrets encrypt --policy-document ves-io-allow-volterra-policy --public-key tenant-public-key privkey.pem > blindfolded-privkey
+
+you will recieve certificate (base64cert.txt and blindfolded-privkey files)
+
+run terraform apply
+
+
+
+
+
+
