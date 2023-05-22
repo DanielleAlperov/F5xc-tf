@@ -45,6 +45,17 @@ https://certbot.eff.org/
 VESCTL:
 
 https://gitlab.com/volterra.io/vesctl/blob/main/README.md
+user .p12 certificate for authentication
+
+$ cat /Users/user1/.vesconfig
+server-urls: https://acmecorp.console.ves.volterra.io/api
+p12-bundle: /Users/user1/certificate.p12
+
+export VES_P12_PASSWORD=myp12password
+
+
+
+
 
 jq installed
 
