@@ -45,7 +45,8 @@ https://certbot.eff.org/
 VESCTL:
 
 https://gitlab.com/volterra.io/vesctl/blob/main/README.md
-user .p12 certificate for authentication
+
+use .p12 certificate for authentication
 
 $ cat /Users/user1/.vesconfig
 
